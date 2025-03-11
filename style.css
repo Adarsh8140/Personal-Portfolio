@@ -3,13 +3,13 @@
 
 /*----- VARIABLES CSS -----*/
 :root {
-  --first-color: #4E1116;
-  --first-color-light: #7b4046;
-  --black-color: #000;
-  --black-color-light: #333;
+  --first-color: #2563eb;
+  --first-color-light: #3b82f6;
+  --black-color: #0f172a;
+  --black-color-light: #1e293b;
   --white-color: #FFF;
-  --gray-color: #ececec;
-  --dark-gray: #666;
+  --gray-color: #e2e8f0;
+  --dark-gray: #94a3b8;
 
   /*Fuente y tipografia*/
   --body-font: 'Poppins', sans-serif;
@@ -264,12 +264,18 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 291px;
+  width: 320px;
   z-index: var(--z-normal);
 }
 
 .home__img img {
-  border-radius: 3px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.home__img img:hover {
+  transform: scale(1.03);
 }
 
 .home__social {
@@ -388,11 +394,13 @@ img {
 }
 
 .services__box {
-  background-color: rgba(78, 17, 22, 0.3);
+  background-color: rgba(37, 99, 235, 0.1);
   text-align: center;
   padding: 2.5rem 1.5rem;
-  border-radius: .5rem;
-  box-shadow: 0 4px 6px rgba(78, 17, 22, 0.2);
+  border-radius: .75rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.3s;
 }
 
@@ -591,15 +599,16 @@ img {
 
 .first {
   background-color: var(--first-color);
+  background-image: linear-gradient(45deg, var(--first-color), var(--black-color));
 }
 
 .second {
-  background-color: var(--first-color);
+  background-color: var(--first-color-light);
   left: 33.3%;
 }
 
 .third {
-  background-color: var(--first-color);
+  background-color: var(--black-color-light);
   left: 66.6%;
 }
 
