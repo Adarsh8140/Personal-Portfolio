@@ -719,3 +719,27 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 500px; /* Increase width */
+  max-width: 100%; /* Ensure responsiveness */
+  z-index: var(--z-normal);
+}
+
+.home__img img {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensure it scales properly */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.home__img img:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
