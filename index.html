@@ -3,40 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adarsh Pandey - Cybersecurity Analyst Portfolio. Specializing in network security, threat detection, and vulnerability assessment." />
+    <meta name="keywords" content="cybersecurity, analyst, portfolio, network security, threat detection, penetration testing" />
+    <meta name="author" content="Adarsh Pandey" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Adarsh Pandey - Portfolio" />
+    <meta property="og:description" content="Professional portfolio showcasing cybersecurity skills, projects, and services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adarsh8140.github.io/Personal-Portfolio/" />
+    <meta property="og:image" content="https://adarsh8140.github.io/Personal-Portfolio/home.jpeg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
     <title>Adarsh Pandey - Portfolio</title>
   </head>
   <body>
     <!-- OVERLAY -->
 
     <!-- HEADER -->
-    <header class="l-header">
+    <header class="l-header" id="header">
       <nav class="nav bd-grid">
-        <div>
+        <div class="nav__brand">
           <a href="#" class="nav__logo">Adarsh Pandey</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
+              <a href="#home" class="nav__link active">
+                <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                <span>Home</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link">
+                <ion-icon name="person-outline" class="nav__icon"></ion-icon>
+                <span>About</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link">Services</a>
+              <a href="#skills" class="nav__link">
+                <ion-icon name="code-slash-outline" class="nav__icon"></ion-icon>
+                <span>Skills</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#projects" class="nav__link">Projects</a>
+              <a href="#projects" class="nav__link">
+                <ion-icon name="code-slash-outline" class="nav__icon"></ion-icon>
+                <span>Projects</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link">
+                <ion-icon name="mail-outline" class="nav__icon"></ion-icon>
+                <span>Contact</span>
+              </a>
             </li>
           </ul>
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
+        <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
           <ion-icon name="menu"></ion-icon>
         </div>
       </nav>
@@ -47,46 +78,54 @@
       <!-- HOME -->
       <section class="home" id="home">
         <div class="home__container bd-grid">
-          <div class="home__information">
-            <span class="home__pressent anime-text">Hello, My name is</span>
-            <h1 class="home__title anime-text">Adarsh Pandey</h1>
-            <span class="home__skill anime-text">
-              CyberSecurity Analyst Trainee
-            </span>
-
-            <div>
-              <a
-                href="https://drive.google.com/file/d/1WfO3Vbdoez6MaOeVH8icQZnll28m2Vyc/view?usp=drive_link"
-                class="home__button anime-text"
-                target="_blank"
-                >DOWNLOAD CV</a
-              >
+          <div class="home__content">
+            <div class="home__information">
+              <span class="home__pressent anime-text" aria-label="Introduction">Hello, My name is</span>
+              <h1 class="home__title anime-text">Adarsh Pandey</h1>
+              <span class="home__skill anime-text">
+                CyberSecurity Analyst Trainee
+              </span>
+              
+              <div class="home__buttons">
+                <a
+                  href="https://drive.google.com/file/d/1WfO3Vbdoez6MaOeVH8icQZnll28m2Vyc/view?usp=drive_link"
+                  class="home__button anime-text"
+                  target="_blank"
+                  aria-label="Download CV"
+                  rel="noopener noreferrer"
+                >DOWNLOAD CV</a>
+                <a href="#contact" class="home__button home__button--secondary anime-text">
+                  <ion-icon name="mail-outline"></ion-icon> Contact Me
+                </a>
+              </div>
+              
+              <!-- Social Links -->
+              <div class="home__social">
+                <a
+                  href="https://github.com/Adarsh8140/"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="GitHub Profile"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adarsh-pandey-933587318/"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="LinkedIn Profile"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="home__img">
-            <img src="home.jpeg" alt="Adarsh Pandey" />
-          </div>
-
-          <!-- Social Links -->
-          <div class="home__social">
-            <a
-              href="https://github.com/Adarsh8140/"
-              target="_blank"
-              class="social-link"
-            >
-              <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adarsh-pandey-933587318/"
-              target="_blank"
-              class="social-link"
-            >
-              <ion-icon
-                name="logo-linkedin"
-                class="home__social-icon"
-              ></ion-icon>
-            </a>
+            <div class="home__img-overlay"></div>
+            <img src="home.jpeg" alt="Adarsh Pandey - Cybersecurity Professional" loading="eager" />
           </div>
         </div>
       </section>
@@ -95,94 +134,333 @@
       <section class="about section" id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about__container bd-grid">
-          <div class="about__img">
-            <img
-              src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=870&auto=format&fit=crop"
-              alt="About Image"
-            />
-          </div>
           <div class="about__content">
             <h2 class="about__subtitle">I'm Adarsh Pandey</h2>
             <p class="about__text">
-              A passionate Cybersecurity Analyst Trainee with a strong
-              foundation in network security, threat detection, and
-              vulnerability assessment. I'm currently pursuing advanced training
-              in security operations and incident response.
+              A passionate Cybersecurity Analyst Trainee with a solid foundation in network security, threat detection, and vulnerability assessment. I'm currently advancing my skills in security operations and incident response.
             </p>
-
-            <div class="about__skills">
-              <div class="skills__data">
-                <div class="skills__names">
-                  <span class="skills__name">Network Security</span>
-                </div>
-                <div class="skills__bar skills__sec">
-                  <span class="skills__percentage" style="width: 85%"></span>
-                </div>
-                <div><span class="skills__percentage-num">85%</span></div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__names">
-                  <span class="skills__name">Penetration Testing</span>
-                </div>
-                <div class="skills__bar skills__pen">
-                  <span class="skills__percentage" style="width: 75%"></span>
-                </div>
-                <div><span class="skills__percentage-num">75%</span></div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__names">
-                  <span class="skills__name">Threat Intelligence</span>
-                </div>
-                <div class="skills__bar skills__threat">
-                  <span class="skills__percentage" style="width: 90%"></span>
-                </div>
-                <div><span class="skills__percentage-num">90%</span></div>
-              </div>
-            </div>
+            <p class="about__text">
+              My interest in cybersecurity sparked during my undergraduate studies, driven by a desire to protect systems from real-world threats. I've gained hands-on experience through my internship at Tata STRIVE, where I worked on tasks like vulnerability scanning, phishing awareness, and incident response planning.
+            </p>
+            <p class="about__text">
+              I enjoy tackling challenges that require analytical thinking, proactive defense, and continuous learning to stay ahead in this ever-evolving field.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- SERVICES -->
-      <section class="services section" id="services">
-        <h2 class="section-title">Services</h2>
-        <div class="services__container bd-grid">
-          <div class="services__box">
-            <ion-icon name="lock" class="services__icon"></ion-icon>
-            <h3 class="services__title">Security Assessments</h3>
-            <p class="services__description">
-              Comprehensive security assessments to identify vulnerabilities and
-              recommend mitigation strategies for your organization.
-            </p>
+      <!-- SKILLS & TECHNOLOGIES -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills & Technologies</h2>
+        
+        <div class="skills__container bd-grid">
+          <div class="skills__tabs">
+            <div class="skills__tab active" data-target="#cybersecurity">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <span>Cybersecurity</span>
+            </div>
+            <div class="skills__tab" data-target="#programming">
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <span>Programming</span>
+            </div>
+            <div class="skills__tab" data-target="#tools">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+              <span>Tools</span>
+            </div>
+            <div class="skills__tab" data-target="#soft">
+              <ion-icon name="people-outline"></ion-icon>
+              <span>Soft Skills</span>
+            </div>
           </div>
-
-          <div class="services__box">
-            <ion-icon name="shield" class="services__icon"></ion-icon>
-            <h3 class="services__title">Incident Response</h3>
-            <p class="services__description">
-              Quick and effective incident response to minimize the impact of
-              security breaches and restore normal operations.
-            </p>
-          </div>
-
-          <div class="services__box">
-            <ion-icon name="search" class="services__icon"></ion-icon>
-            <h3 class="services__title">Threat Hunting</h3>
-            <p class="services__description">
-              Proactive threat hunting to detect and eliminate advanced
-              persistent threats before they can cause damage.
-            </p>
-          </div>
-
-          <div class="services__box">
-            <ion-icon name="school" class="services__icon"></ion-icon>
-            <h3 class="services__title">Security Training</h3>
-            <p class="services__description">
-              Customized security awareness training programs to educate
-              employees about best practices and common threats.
-            </p>
+          
+          <div class="skills__content">
+            <!-- Cybersecurity Skills -->
+            <div class="skills__area active" id="cybersecurity">
+              <h3 class="skills__subtitle">Cybersecurity Expertise</h3>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <ion-icon name="lock-closed-outline" class="skills__icon"></ion-icon>
+                  <span class="skills__name">Network Security</span>
+                </div>
+                <div class="skills__bar skills__network">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">85%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <ion-icon name="search-outline" class="skills__icon"></ion-icon>
+                  <span class="skills__name">Vulnerability Assessment</span>
+                </div>
+                <div class="skills__bar skills__vuln">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">80%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <ion-icon name="bug-outline" class="skills__icon"></ion-icon>
+                  <span class="skills__name">Penetration Testing</span>
+                </div>
+                <div class="skills__bar skills__pentest">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">75%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <ion-icon name="key-outline" class="skills__icon"></ion-icon>
+                  <span class="skills__name">Cryptography</span>
+                </div>
+                <div class="skills__bar skills__crypto">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">78%</span></div>
+              </div>
+            </div>
+            
+            <!-- Programming Skills -->
+            <div class="skills__area" id="programming">
+              <h3 class="skills__subtitle">Programming Languages</h3>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <div class="skills__icon-container">
+                    <img src="icons/cpp.svg" alt="C/C++" class="skills__icon-svg">
+                  </div>
+                  <span class="skills__name">C/C++</span>
+                </div>
+                <div class="skills__bar skills__cpp">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">85%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <div class="skills__icon-container">
+                    <img src="icons/python.svg" alt="Python" class="skills__icon-svg">
+                  </div>
+                  <span class="skills__name">Python</span>
+                </div>
+                <div class="skills__bar skills__python">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">80%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <ion-icon name="logo-html5" class="skills__icon"></ion-icon>
+                  <span class="skills__name">HTML/CSS/JS</span>
+                </div>
+                <div class="skills__bar skills__web">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">75%</span></div>
+              </div>
+              
+              <div class="skills__data">
+                <div class="skills__names">
+                  <div class="skills__icon-container">
+                    <img src="icons/sql.svg" alt="SQL" class="skills__icon-svg">
+                  </div>
+                  <span class="skills__name">SQL</span>
+                </div>
+                <div class="skills__bar skills__sql">
+                  <span class="skills__percentage"></span>
+                </div>
+                <div><span class="skills__percentage-num">70%</span></div>
+              </div>
+            </div>
+            
+            <!-- Tools -->
+            <div class="skills__area" id="tools">
+              <h3 class="skills__subtitle">Tools & Technologies</h3>
+              
+              <div class="skills__tools-grid">
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/vscode.svg" alt="VSCode" class="skills__tool-svg">
+                  </div>
+                  <h4>VSCode</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/github.svg" alt="Git/GitHub" class="skills__tool-svg">
+                  </div>
+                  <h4>Git/GitHub</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/nmap.svg" alt="Nmap" class="skills__tool-svg">
+                  </div>
+                  <h4>Nmap</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/burpsuite.svg" alt="Burp Suite" class="skills__tool-svg">
+                  </div>
+                  <h4>Burp Suite</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/nessus.svg" alt="Nessus" class="skills__tool-svg">
+                  </div>
+                  <h4>Nessus</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/xampp.svg" alt="XAMPP" class="skills__tool-svg">
+                  </div>
+                  <h4>XAMPP</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <img src="icons/arduino.svg" alt="Arduino" class="skills__tool-svg">
+                  </div>
+                  <h4>Arduino</h4>
+                </div>
+                
+                <div class="skills__tool">
+                  <div class="skills__tool-icon">
+                    <ion-icon name="logo-wordpress"></ion-icon>
+                  </div>
+                  <h4>WPScan</h4>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="skills__area" id="soft">
+              <h3 class="skills__subtitle">Soft Skills</h3>
+              
+              <div class="skills__soft-container">
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="90"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">90%</text>
+                    </svg>
+                  </div>
+                  <h4>Communication</h4>
+                </div>
+                
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="85"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">85%</text>
+                    </svg>
+                  </div>
+                  <h4>Leadership</h4>
+                </div>
+                
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="88"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">88%</text>
+                    </svg>
+                  </div>
+                  <h4>Problem Solving</h4>
+                </div>
+                
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="92"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">92%</text>
+                    </svg>
+                  </div>
+                  <h4>Adaptability</h4>
+                </div>
+                
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="87"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">87%</text>
+                    </svg>
+                  </div>
+                  <h4>Time Management</h4>
+                </div>
+                
+                <div class="skills__soft">
+                  <div class="skills__soft-circle">
+                    <svg viewBox="0 0 36 36" class="skills__soft-svg">
+                      <path class="skills__soft-circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path class="skills__soft-circle-fill" data-percentage="89"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <text x="18" y="20.35" class="skills__soft-percentage">89%</text>
+                    </svg>
+                  </div>
+                  <h4>Teamwork</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -190,55 +468,103 @@
       <!-- PROJECTS -->
       <section class="projects section" id="projects">
         <h2 class="section-title">Recent Projects</h2>
+        <div class="projects__filters">
+          <button class="projects__filter-btn active" data-filter="all">All</button>
+          <button class="projects__filter-btn" data-filter="security">Security</button>
+          <button class="projects__filter-btn" data-filter="web">Web Dev</button>
+          <button class="projects__filter-btn" data-filter="tools">Tools</button>
+        </div>
+        
         <div class="projects__container bd-grid">
-          <div class="projects__box">
-            <img
-              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=870&auto=format&fit=crop"
-              alt="Project 1"
-              class="projects__img"
-            />
+          <article class="projects__box" data-category="web">
+            <div class="projects__img-container">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=870&auto=format&fit=crop"
+                alt="Hotel Management System Project"
+                class="projects__img"
+                loading="lazy"
+              />
+            </div>
             <div class="projects__overlay">
               <h3 class="projects__title">Hotel Management System</h3>
+              <div class="projects__tech">
+                <span class="projects__tech-badge">HTML</span>
+                <span class="projects__tech-badge">CSS</span>
+                <span class="projects__tech-badge">JavaScript</span>
+                <span class="projects__tech-badge">PHP</span>
+              </div>
               <p class="projects__description">
                 Build a hotel booking system, featuring user reservations and an
                 admin panel for management.
               </p>
-              <a href="#" class="projects__link">View Details</a>
+              <div class="projects__links">
+                <a href="https://github.com/Adarsh8140" class="projects__link projects__link--code" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <ion-icon name="logo-github"></ion-icon> View Code
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="projects__box">
-            <img
-              src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=869&auto=format&fit=crop"
-              alt="Project 2"
-              class="projects__img"
-            />
+          <article class="projects__box" data-category="tools">
+            <div class="projects__img-container">
+              <img
+                src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=869&auto=format&fit=crop"
+                alt="Video Downloader Project"
+                class="projects__img"
+                loading="lazy"
+              />
+            </div>
             <div class="projects__overlay">
               <h3 class="projects__title">Video Downloader</h3>
+              <div class="projects__tech">
+                <span class="projects__tech-badge">Python</span>
+                <span class="projects__tech-badge">PyQt5</span>
+                <span class="projects__tech-badge">yt-dlp</span>
+              </div>
               <p class="projects__description">
                 Designed a fast and user-friendly video downloader to save
                 online videos for seamless offline viewing.
               </p>
-              <a href="#" class="projects__link">View Details</a>
+              <div class="projects__links">
+                <a href="https://github.com/Adarsh8140" class="projects__link projects__link--code" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <ion-icon name="logo-github"></ion-icon> View Code
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="projects__box">
-            <img
-              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=869&auto=format&fit=crop"
-              alt="Project 3"
-              class="projects__img"
-            />
-            <div class="projects__overlay">
-              <h3 class="projects__title">VulnLab</h3>
-              <p class="projects__description">
-                A deliberately vulnerable web application for cybersecurity
-                training.Implemented SQL Injection, XSS, Weak Session ID
-                challenges.
-              </p>
-              <a href="#" class="projects__link">View Details</a>
+          <article class="projects__box" data-category="web">
+            <div class="projects__img-container">
+              <img
+                src="https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGljJTIwdGFjJTIwdG9lfGVufDB8fDB8fHww"
+                alt="Tic Tac Toe Game Project"
+                class="projects__img"
+                loading="lazy"
+              />
             </div>
-          </div>
+            <div class="projects__overlay">
+              <h3 class="projects__title">Tic Tac Toe Game</h3>
+              <div class="projects__tech">
+                <span class="projects__tech-badge">HTML</span>
+                <span class="projects__tech-badge">CSS</span>
+                <span class="projects__tech-badge">JavaScript</span>
+              </div>
+              <p class="projects__description">
+                Developed a 2-player Tic Tac Toe game with win/draw detection using HTML, CSS, and JavaScript.
+              </p>
+              <div class="projects__links">
+                <a href="https://github.com/Adarsh8140/TicTacToe" class="projects__link projects__link--code" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <ion-icon name="logo-github"></ion-icon> View Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="projects__more">
+          <a href="https://github.com/Adarsh8140" class="home__button" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon> View More Projects
+          </a>
         </div>
       </section>
 
@@ -246,20 +572,17 @@
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact Me</h2>
         <div class="contact__container bd-grid">
-          <form action="#" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="email" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              placeholder="Message"
-              class="contact__input"
-            ></textarea>
-            <button type="submit" class="contact__button home__button">
-              Send Message
-            </button>
+          <form action="https://formspree.io/f/xgvynwky" method="POST" class="contact__form" id="contact-form">
+            <input type="text" name="name" placeholder="Name" class="contact__input" required />
+            <input type="email" name="email" placeholder="Email" class="contact__input" required />
+            <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
+            <div class="form__status-container">
+              <button type="submit" class="contact__button home__button">
+                <span class="button__text">Send Message</span>
+                <span class="button__icon"><ion-icon name="paper-plane-outline"></ion-icon></span>
+              </button>
+              <p class="form__status" id="form-status"></p>
+            </div>
           </form>
 
           <div class="contact__info">
@@ -311,11 +634,18 @@
       <p class="footer__copy">© 2025 Adarsh Pandey. All rights reserved</p>
     </footer>
 
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <ion-icon name="arrow-up" class="scrolltop__icon"></ion-icon>
+    </a>
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
     <!-- MAIN -->
     <script src="script.js"></script>
+    <script src="skills.js"></script>
+    <script src="about.js"></script>
 
     <!-- ICONS -->
     <script
